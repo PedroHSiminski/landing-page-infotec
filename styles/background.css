@@ -1,0 +1,34 @@
+.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.125);
+    backdrop-filter: blur(4px);
+}
+
+.bg-transparent * {
+    color: white;
+}
+
+.bg-white {
+    background-color: rgb(243, 243, 243);
+}
+
+.bg-grey {
+    background-color: rgb(213, 213, 213);
+}
+
+#background1 {
+    background-image: url(../assets/backgroundInfotec.png);
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem */
+    background-size: cover;
+    /* Faz a imagem preencher a tela inteira */
+    background-position: center;
+    /* Centraliza a imagem */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: auto;
+}

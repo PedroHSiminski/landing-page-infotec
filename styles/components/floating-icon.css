@@ -1,0 +1,19 @@
+.floating-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    max-width: 8rem;
+}
+
+.floating-icon img {
+    width: 4rem;
+    filter: invert(31%) sepia(47%) saturate(2388%) hue-rotate(181deg) brightness(91%) contrast(93%);
+}
+
+.floating-icon h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}

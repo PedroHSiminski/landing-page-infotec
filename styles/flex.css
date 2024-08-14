@@ -1,0 +1,29 @@
+/* flex-types */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* alinhamentos */
+.jc-center {
+    justify-content: center;
+}
+
+.jc-spaceb {
+    justify-content: space-between;
+}
+
+/* gaps */
+.gap-4 {
+    gap: 2rem;
+}
+
+
+.gap-8 {
+    gap: 4rem;
+}

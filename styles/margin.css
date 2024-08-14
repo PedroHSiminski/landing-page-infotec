@@ -1,0 +1,47 @@
+/* Margins topo*/
+.m-top-12 {
+    margin-top: 6rem;
+}
+
+.m-top-8 {
+    margin-top: 4rem;
+}
+
+.m-top-4 {
+    margin-top: 2rem;
+}
+
+/* Margins abaixo */
+
+.m-bot-8 {
+    margin-bottom: 4rem;
+}
+
+.m-bot-4 {
+    margin-bottom: 2rem;
+}
+
+/* Margins horizontais */
+
+.m-h-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Paddings topo */
+.p-top-12 {
+    padding-top: 6rem;
+}
+
+/* Paddings abaixo */
+.p-bot-4 {
+    padding-bottom: 2rem;
+}
+
+.p-bot-8 {
+    padding-bottom: 4rem;
+}
+
+.p-bot-12 {
+    padding-bottom: 6rem;
+}

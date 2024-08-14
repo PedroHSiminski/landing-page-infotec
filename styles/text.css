@@ -1,0 +1,42 @@
+/* Titulos */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+/* Paragrafos */
+.ts-b {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ts-mb {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.ts-m {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Cores */
+.tc-highlight {
+    color: #3B8395;
+}
+
+.tc-white {
+    color: #ffffff;
+}
+
+.tc-black {
+    color: #050505;
+}
+
+/* Alinhamento */
+.tcenter {
+    text-align: center;
+}

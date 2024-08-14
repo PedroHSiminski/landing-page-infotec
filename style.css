@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.flex {
+    display: flex;
+}
+
 body{
     height: 100vh;
     background-color: #e4e1e1;
@@ -79,8 +83,9 @@ header .textos{
     gap: 70px;
     flex-direction: column;
 }
+/* TEXTOS HEADER */
 
-header .textos h1{
+header .textos .titulo{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,4 +103,35 @@ header .textos p {
     color: #fff;
     font-size: 25px;
     font-weight: 500;
+    margin-bottom: 70px;
+}
+
+/* QUEM SOMOS */
+
+section.quem-somos{
+    padding: 40px 4%;
+    background-color: rgba(255, 255, 255, 0.192);
+}
+
+section.quem-somos .flex{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section.quem-somos .titulo{
+    text-align: center;
+    color: #050505;
+    margin-top: 100px;
+    font-size: 50px;
+}
+section.quem-somos .subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.highlight {
+    color: #3B8395;
 }
