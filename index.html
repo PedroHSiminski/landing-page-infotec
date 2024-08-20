@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="./styles/margin.css">
     <link rel="stylesheet" href="./styles/background.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sizes.css">
     <link rel="stylesheet" href="./styles/components/floating-icon.css">
+    <link rel="stylesheet" href="./styles/components/milagre.css">
     <script type="module" src="script.js" defer></script>
+    <script type="module" src="scripts/animations/writingEffect.js" defer></script>
+    
 </head>
 
 <body>
@@ -21,7 +25,7 @@
         <header class="bg-transparent">
             <div class="flex-row jc-spaceb">
                 <div class="h-logo">
-                    <a href="#" class="header-link"><img class="infotec" src="assets/logoInfotec.png" alt=""></a>
+                    <a href="#" class="header-link"><img class="infotec" src="assets/logos/logo-infotec.png" alt=""></a>
                 </div>
 
                 <nav class="flex-column jc-center">
@@ -40,7 +44,7 @@
 
             </div>
             <div class="m-bot-8">
-                <h1 class="tcenter tc-white m-top-8 m-bot-4">SEJA BEM-VINDO(A)!</h1>
+                <h1 id="tituloBemVindo" class="tcenter tc-white m-top-8 m-bot-4">SEJA BEM-VINDO(A)!</h1>
                 <p class="ts-b tcenter tc-white">Aumente a performance da sua equipe de vendas e melhore o atendimento
                     dos
                     seus clientes.</p>
@@ -49,27 +53,44 @@
         <main>
             <section class="p-bot-12 p-top-12 bg-white">
                 <div class="flex-column gap-4">
-                    <div class="flex-column gap-4">
-                        <h1 class="tcenter">QUEM <span class="tc-highlight">SOMOS</span></h1>
-                        <h2>Somos <span class="tc-highlight">&nbsp;pioneiros&nbsp;</span> no
+                    <h1 class="tcenter m-bot-8">QUEM <span class="tc-highlight">SOMOS</span></h1>
+                    <div class="flex-row gap-4">
+                        <h2><span class="tc-highlight">Pioneiros&nbsp;</span> no
                             desenvolvimento
                             de um sistema CRM sob medida para operações de vendas em indústrias!</h2>
                         <p>Somos a única com consultoria especializada na implantação deste setor.</p>
                         <h3>Nossa metodologia foi desenvolvida e aperfeiçoada em mais de 15 anos de atuação.</h3>
                     </div>
                     <hr>
+                    <p class="ts-b tcenter m-top-4">VALORES</p>
                     <div class="flex-row gap-8 m-top-4">
                         <div class="floating-icon">
                             <img src="./assets/icons/headset-solid.svg" />
-                            <h1>Suporte Qualificado</h1>
+                            <h1>Excelência no atendimento ao cliente</h1>
                         </div>
                         <div class="floating-icon">
                             <img src="./assets/icons/handshake-angle-solid.svg" />
-                            <h1>Consultoria especializada</h1>
+                            <h1>Respeito</h1>
                         </div>
                         <div class="floating-icon">
                             <img src="./assets/icons/sitemap-solid.svg" />
-                            <h1>Sistemas parametrizados de acordo com sua escolha</h1>
+                            <h1>Desenvolvimento sob medida</h1>
+                        </div>
+                        <div class="floating-icon">
+                            <img src="./assets/icons/scale-balanced-solid.svg"/>
+                            <h1>Ética empresarial</h1>
+                        </div>
+                        <div class="floating-icon">
+                            <img src="./assets/icons/toolbox-solid.svg" />
+                            <h1>Sustentabilidade do negócio</h1>
+                        </div>
+                        <div class="floating-icon">
+                            <img src="./assets/icons/hand-holding-heart-solid.svg" />
+                            <h1>Solidariedade</h1>
+                        </div>
+                        <div class="floating-icon">
+                            <img src="./assets/icons/thumbs-up-solid.svg" />
+                            <h1>Eficácia nas aplicações</h1>
                         </div>
                     </div>
                 </div>
@@ -82,9 +103,22 @@
                 </div>
             </section>
             <section class="p-bot-12 p-top-12 bg-white">
-                <div>
-                    <img src="/assets/Logo Inpulse - Negativo Horizontal Fundo Transparente.3901f09384c260094de1.png" />
-                    <h1> Acelere suas vendas </h1>
+                <div class="flex-column gap-4">
+                    <h1 class="ts-titulo-big tcenter m-bot-8">Nossas <span class="tc-highlight-i">soluções</span></h1>
+                    <h2 class="ts-titulo-med tcenter">
+                        O In.Pulse foi projetado para facilitar o <span class="tc-highlight-i ">atendimento e a venda</span> aos seus clientes. Sua equipe fazendo ligações diretamente do CRM com a solução integrada à telefonia.
+                    </h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                    <img src="/assets/img/teste.png">
+                    
                 </div>
             </section>
         </main>

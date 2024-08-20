@@ -22,3 +22,12 @@ section>div {
     width: 4rem;
     height: 4rem;
 }
+
+.inpulse-logo {
+    width: 30rem;
+    align-self: center;
+}
+
+.generic-chart {
+    width: 40rem;
+}

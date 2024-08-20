@@ -16,7 +16,7 @@
 }
 
 #background1 {
-    background-image: url(../assets/backgroundInfotec.png);
+    background-image: url(../assets/img/generic-work-bg.png);
     background-repeat: no-repeat;
     /* Impede a repetição da imagem */
     background-size: cover;
@@ -29,6 +29,5 @@
     z-index: 0;
     width: 100vw;
     height: 100vh;
-
     overflow: auto;
 }
