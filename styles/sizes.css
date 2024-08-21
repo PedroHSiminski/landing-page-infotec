@@ -1,3 +1,14 @@
 .half-width {
     width: 50%;
 }
+
+/* IMAGENS */
+.img-big {
+    width: 70rem;
+}
+.img-med {
+    width: 40rem;
+}
+.img-min {
+    width: 20rem;
+}

@@ -31,3 +31,8 @@ section>div {
 .generic-chart {
     width: 40rem;
 }
+
+
+a{
+    text-decoration: none;
+}

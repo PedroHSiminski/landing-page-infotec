@@ -10,7 +10,9 @@
 .bg-white {
     background-color: rgb(243, 243, 243);
 }
-
+.box-shadow{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 .bg-grey {
     background-color: rgb(213, 213, 213);
 }
