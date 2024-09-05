@@ -1,162 +1,75 @@
 .floating-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: max-content;
-    max-width: 8rem;
-    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: calc(var(--base-size) * 1);
+	width: calc(var(--base-size) * 8);
 }
 
 .floating-icon img {
-    width: 4rem;
-    filter: invert(31%) sepia(47%) saturate(2388%) hue-rotate(181deg) brightness(91%) contrast(93%);
-    cursor: pointer;
+	width: calc(var(--base-size) * 4);
+	height: calc(var(--base-size) * 4);
+
+	cursor: pointer;
+}
+
+.floating-icon > img {
+	filter: invert(31%) sepia(47%) saturate(2388%) hue-rotate(181deg)
+		brightness(91%) contrast(93%);
+}
+
+.floating-icon.inpulse > img {
+	filter: invert(50%) sepia(70%) saturate(800%) hue-rotate(325deg)
+		brightness(100%) contrast(105%);
 }
 
 .floating-icon h1 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
+	font-size: calc(var(--base-size) * 1.25);
+	font-weight: 500;
+	text-align: center;
 }
 
-/* ICONS SECTION INPULSE */
-
-.floating-icon-inPulse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    width: max-content;
-    max-width: 8rem;
+.floating-icon.horizontal {
+	width: auto;
+	flex-direction: row;
+	gap: calc(var(--base-size) * 2);
+}
+.floating-icon.horizontal h1 {
+	font-size: calc(var(--base-size) * 2);
+	font-weight: 600;
+	text-align: center;
 }
 
-.floating-icon-inPulse img {
-    width: 3rem;
-    filter: invert(50%) sepia(70%) saturate(800%) hue-rotate(325deg) brightness(100%) contrast(105%);
-    cursor: pointer;
-    transition: .3s;
-}
-.floating-icon-inPulse img:hover {
-    width: 3.1rem;
-    transform: scale(1.05);
-}
 
-.floating-icon-inPulse h1 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-}
+@media(max-width: 60rem) {
+	.floating-icon.mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: calc(var(--base-size) * 0.5);
+		width: calc(var(--base-size) * 4);
+	}
+	
+	.floating-icon.mobile img {
+		width: calc(var(--base-size) * 3);
+		height: calc(var(--base-size) * 3);
+	
+		cursor: pointer;
+	}
 
-/* FLOATING ICON FERRAMENTA */
+	.floating-icon.mobile h1 {
+		font-size: calc(var(--base-size) * 1);
+		font-weight: 400;
+	}
 
-.floating-icon-ferramenta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    width: max-content;
-    max-width: 8rem;
-}
-
-.floating-icon-ferramenta img {
-    width: 3rem;
-    filter: invert(50%) sepia(70%) saturate(800%) hue-rotate(325deg) brightness(100%) contrast(105%);
-    cursor: pointer;
-    transition: .3s;
-}
-.floating-icon-ferramenta img:hover {
-    width: 3.1rem;
-    transform: scale(1.05);
-}
-
-.floating-icon-ferramenta h1 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-/* IMAGEM WHATS APP */
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        "icon1 central icon2"
-        "icon3 central icon4"
-        "icon5 central icon6";
-    gap: 3rem;
-    margin-left: 3rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.floating-icon:nth-child(1) { grid-area: icon1; }
-.floating-icon:nth-child(2) { grid-area: icon2; }
-.floating-icon:nth-child(3) { grid-area: icon3; }
-.floating-icon:nth-child(4) { grid-area: icon4; }
-.floating-icon:nth-child(5) { grid-area: icon5; }
-
-.central-image {
-    grid-area: central; 
-    height: auto;
-}
-
-/* FLOATING ICONS CONSULTORIA */
-
-.floating-icon-consultoria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    width: max-content;
-    max-width: 8rem;
-}
-
-.floating-icon-consultoria img {
-    width: 5rem;
-    filter: invert(31%) sepia(47%) saturate(2388%) hue-rotate(181deg) brightness(91%) contrast(93%);
-    cursor: pointer;
-    transition: .3s;
-}
-.floating-icon-consultoria img:hover {
-    width: 5.1rem;
-    transform: scale(1.05);
-}
-
-.floating-icon-consultoria h1 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-/* DESCRIÇÃO CONSULTORIA */
-.floating-icon-consultoria-desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    width: max-content;
-    /* max-width: 8rem; */
-    padding: 1.5rem;
-}
-
-.floating-icon-consultoria-desc img {
-    width: 4rem;
-    filter: invert(31%) sepia(47%) saturate(2388%) hue-rotate(181deg) brightness(91%) contrast(93%);
-    cursor: pointer;
-    transition: .3s
-}
-.floating-icon-consultoria-desc img:hover {
-    width: 4.1rem;
-    transform: scale(1.05);
-}
-
-.floating-icon-consultoria-desc h1 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-}
-.floating-icon-consultoria-desc p{
-    text-align: center;
-    font-size: 0.95rem;
+	.floating-icon.horizontal {
+		width: auto;
+		flex-direction: row;
+		gap: calc(var(--base-size) * 1);
+	}
+	.floating-icon.horizontal h1 {
+		font-size: calc(var(--base-size) * 1.5);
+		font-weight: 600;
+		text-align: center;
+	}
 }

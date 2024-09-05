@@ -1,38 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(243, 243, 243);
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+	background-color: rgb(243, 243, 243);
 }
 
 section {
-    width: 100%;
+	width: 100%;
 }
 
-section>div {
-    width: 75rem;
-    margin: auto;
+section > div {
+	width: 75rem;
+	max-width: 100%;
+	margin: auto;
 }
 
-.icon {
-    width: 4rem;
-    height: 4rem;
+@media (max-width: 75rem) {
+	section > div {
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		box-sizing: border-box;
+	}
 }
 
-.inpulse-logo {
-    width: 30rem;
-    align-self: center;
+a:hover {
+	text-decoration: underline;
+	transition: 200ms ease-in-out;
 }
 
-.generic-chart {
-    width: 40rem;
+hr {
+	width: calc(100% - calc(var(--base-size) * 4));
+	height: calc(var(--base-size) * 0.125);
+	background-color: rgba(0, 0, 0, 0.125);
+	border-radius: 25%;
+	border: none;
+	outline: none;
+
+	margin: calc(var(--base-size) * 2);
 }
 
+:root {
+	--base-size: 1rem;
+}
 
-a{
-    text-decoration: none;
+@media (max-width: 70rem) {
+	:root {
+		--base-size: 0.875rem;
+	}
+}
+
+@media (max-width: 50rem) {
+	:root {
+		--base-size: 0.75rem;
+	}
 }

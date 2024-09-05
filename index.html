@@ -2,255 +2,313 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infotec Solution Provider</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/text.css">
-    <link rel="stylesheet" href="./styles/flex.css">
-    <link rel="stylesheet" href="./styles/margin.css">
-    <link rel="stylesheet" href="./styles/background.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/sizes.css">
-    <link rel="stylesheet" href="./styles/components/floating-icon.css">
-    <link rel="stylesheet" href="./styles/components/milagre.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="icon" href="./assets/img/logoInfotecAba.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script type="module" src="script.js" defer></script>
-    <script type="module" src="scripts/animations/writingEffect.js" defer></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infotec Solution Provider</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/text.css">
+  <link rel="stylesheet" href="./styles/flex.css">
+  <link rel="stylesheet" href="./styles/margin.css">
+  <link rel="stylesheet" href="./styles/background.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/sizes.css">
+  <link rel="stylesheet" href="./styles/components/floating-icon.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/border.css">
+  <link rel="stylesheet" href="./styles/containers.css">
+  <link rel="icon" href="./assets/img/logoInfotecAba.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <script type="module" src="script.js" defer></script>
+
 </head>
 
 <body>
-    <div id="background1">
-        <header class="bg-transparent">
-            <div class="flex-row jc-spaceb">
-                <div class="h-logo">
-                    <a href="#" class="header-link"><img class="infotec" src="assets/logos/logo-infotec.png" alt=""></a>
-                </div>
+  <div id="background1">
+    <header class="bg-transparent text-slate-100 box-full">
+      <div class="box-default pt-4 pb-12">
+        <div class="flex-row justify-between gap-4">
+          <div>
+            <a href="#">
+              <img class="img-xs" src="assets/logos/logo-infotec.png" alt="">
+            </a>
+          </div>
 
-                <nav class="flex-column jc-center">
-                    <ul class="flex-row gap-8">
-                        <li><a href="#quemSomos" class="header-link ts-mb">Quem somos</a></li>
-                        <li><a href="#nossasSolucoes" class="header-link ts-mb">Nossas soluções</a></li>
-                        <!-- <li><a href="#" class="header-link ts-mb">Cases de sucesso</a></li> -->
-                    </ul>
-                </nav>
+          <nav class="flex-column justify-center">
+            <ul class="flex-row gap-4">
+              <li><a href="#whoiam" class="text-lg">Quem somos</a></li>
+              <li><a href="#solutions" class="text-lg">Nossas soluções</a></li>
+            </ul>
+          </nav>
 
-                <div class="btn-contato">
-                    <a href="#" class="header-link">
-                        <button>Agende uma conversa</button>
-                    </a>
-                </div>
+          <div class="btn-contato">
+            <a href="#">
+              <button class="text-base text-slate-50 px-2 py-1 radius-2">Fale conosco</button>
+            </a>
+          </div>
 
+        </div>
+        <div>
+          <h1 id="welcome-title" class="text-center text-4xl font-500 mt-8 mb-4">Seja bem vindo(a)!</h1>
+          <p class="text-lg text-center">Aumente a performance da sua equipe de vendas e melhore o
+            atendimento
+            dos
+            seus clientes.</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="whoiam" class="pb-12 pt-8 bg-white">
+        <div class="flex-column gap-4">
+          <h2 class="text-center text-6xl font-600 mb-8">QUEM <span class="text-infotec">SOMOS</span></h1>
+            <div class="flex-row gap-4 text-xl flex-wrap">
+              <p>
+                <span class="text-infotec">Pioneiros</span>
+                no desenvolvimento de um sistema CRM sob medida para operações de vendas em indústrias!
+              </p>
+              <p>
+                Somos a única com consultoria especializada na implantação deste setor.
+              </p>
+              <p>
+                Nossa metodologia foi desenvolvida e aperfeiçoada em mais de
+                <span class="text-infotec">15 anos</span>
+                de atuação.
+              </p>
             </div>
-            <div class="m-bot-8">
-                <h1 id="tituloBemVindo" class="tcenter tc-white m-top-8 m-bot-4">SEJA BEM-VINDO(A)!</h1>
-                <p class="ts-b tcenter tc-white">Aumente a performance da sua equipe de vendas e melhore o atendimento
-                    dos
-                    seus clientes.</p>
+            <hr />
+            <h2 class="text-center text-4xl font-600 mb-2">NOSSOS <span class="text-infotec">VALORES</span></h2>
+            <div class="flex-row gap-4 mt-4 flex-wrap justify-center">
+              <div class="floating-icon">
+                <img src="./assets/icons/headset-solid.svg" />
+                <h1>Excelência no atendimento ao cliente</h1>
+              </div>
+              <div class="floating-icon">
+                <img src="./assets/icons/handshake-angle-solid.svg" />
+                <h1>Respeito</h1>
+              </div>
+              <div class="floating-icon">
+                <img src="./assets/icons/sitemap-solid.svg" />
+                <h1>Desenvolvimento sob medida</h1>
+              </div>
+              <div class="floating-icon">
+                <img src="./assets/icons/scale-balanced-solid.svg" />
+                <h1>Ética empresarial</h1>
+              </div>
+              <div class="floating-icon">
+                <img src="./assets/icons/toolbox-solid.svg" />
+                <h1>Sustentabilidade do negócio</h1>
+              </div>
+              <div class="floating-icon">
+                <img src="./assets/icons/hand-holding-heart-solid.svg" />
+                <h1>Solidariedade</h1>
+              </div>
+              <div class="floating-icon">
+                <img src="./assets/icons/thumbs-up-solid.svg" />
+                <h1>Eficácia nas aplicações</h1>
+              </div>
             </div>
-        </header>
-        <main>
-            <section id="quemSomos" class="p-bot-12 p-top-12 bg-white">
-                <div class="flex-column gap-4">
-                    <h1 class="tcenter m-bot-8">QUEM <span class="tc-highlight">SOMOS</span></h1>
-                    <div class="flex-row gap-4">
-                        <h2><span class="tc-highlight">Pioneiros&nbsp;</span> no
-                            desenvolvimento
-                            de um sistema CRM sob medida para operações de vendas em indústrias!</h2>
-                        <p>Somos a única com consultoria especializada na implantação deste setor.</p>
-                        <h3>Nossa metodologia foi desenvolvida e aperfeiçoada em mais de <span class="tc-highlight">15 anos</span> de atuação.</h3>
-                    </div>
-                    <hr>
-                    <p class="ts-b tcenter m-top-4">VALORES</p>
-                    <div class="flex-row gap-8 m-top-4">
-                        <div class="floating-icon">
-                            <img src="./assets/icons/headset-solid.svg" />
-                            <h1>Excelência no atendimento ao cliente</h1>
-                        </div>
-                        <div class="floating-icon">
-                            <img src="./assets/icons/handshake-angle-solid.svg" />
-                            <h1>Respeito</h1>
-                        </div>
-                        <div class="floating-icon">
-                            <img src="./assets/icons/sitemap-solid.svg" />
-                            <h1>Desenvolvimento sob medida</h1>
-                        </div>
-                        <div class="floating-icon">
-                            <img src="./assets/icons/scale-balanced-solid.svg"/>
-                            <h1>Ética empresarial</h1>
-                        </div>
-                        <div class="floating-icon">
-                            <img src="./assets/icons/toolbox-solid.svg" />
-                            <h1>Sustentabilidade do negócio</h1>
-                        </div>
-                        <div class="floating-icon">
-                            <img src="./assets/icons/hand-holding-heart-solid.svg" />
-                            <h1>Solidariedade</h1>
-                        </div>
-                        <div class="floating-icon">
-                            <img src="./assets/icons/thumbs-up-solid.svg" />
-                            <h1>Eficácia nas aplicações</h1>
-                        </div>
-                    </div>
+        </div>
+      </section>
+      <section class="pb-12 pt-12 bg-transparent text-slate-50">
+        <div class="flex-row justify-between text-lg font-600 gap-2">
+          <p >+<span id="projetos-implanatados">0</span> projetos impantados</p>
+          <p >+<span id="pessoas-treinadas">1</span> pessoas treinadas</p>
+          <p >+<span id="treinamentos-executados">1</span> treinamentos executados</p>
+        </div>
+      </section>
+      <section id="solutions" class="pb-12 pt-12 bg-grey">
+        <div class="flex-column gap-4">
+          <h2 class="text-6xl text-slate-900 font-600 text-center">
+            in.Pulse <span class="text-inpulse">CRM</span>
+          </h2>
+          <p class="text-2xl text-slate-700 text-center">
+            O In.Pulse foi projetado para facilitar o <span class="text-inpulse ">atendimento e a
+              venda</span> aos seus clientes. Sua equipe fazendo ligações diretamente do CRM com a solução
+            integrada à telefonia.
+          </p>
+          <p class="text-4xl text-slate-700 text-center mb-4 mt-4">Um sistema <span class="text-inpulse">simples</span>
+            e
+            <span class="text-inpulse">eficiente</span>!
+          </p>
+          <hr>
+          <div class="icons-inPulse flex-row flex-wrap gap-4 justify-center text-slate-800">
+            <div class="floating-icon inpulse">
+              <img src="./assets/icons/product-hunt-brands-solid.svg">
+              <h1>Impulsione a produtividade e controle da sua equipe</h1>
+            </div>
+            <div class="floating-icon inpulse">
+              <img src="./assets/icons/people-roof-solid.svg">
+              <h1>Visão completa da operação com gestão ativa de clientes</h1>
+            </div>
+            <div class="floating-icon inpulse">
+              <img src="./assets/icons/phone-solid.svg">
+              <h1>Gravação de chamadas para máxima segurança e qualidade</h1>
+            </div>
+            <div class="floating-icon inpulse">
+              <img src="./assets/icons/bullseye-solid.svg">
+              <h1>Centralize informações e contatos em um único ambiente</h1>
+            </div>
+            <div class="floating-icon inpulse">
+              <img src="./assets/icons/calendar-days-solid.svg">
+              <h1>Agenda inteligente e automatizada para máxima eficiência</h1>
+            </div>
+            <div class="floating-icon inpulse">
+              <img src="./assets/icons/laptop-medical-solid.svg">
+              <h1>Relatórios de gestão em diversos formatos para análise estratégica</h1>
+            </div>
+          </div> <!--floating-icons-inPulse-->
+          <img class="mt-8 img-big mb:img-sm mx-center" src="./assets/img/inPulseImagem.png">
+        </div>
+      </section>
+      <section class="pb-12 pt-12 bg-white">
+        <div class="flex-column gap-4">
+          <h2 class="text-6xl text-slate-900 font-600 text-center">
+            in.Pulse <span class="text-inpulse">WhatsApp</span>
+          </h2>
+          <p class="text-xl text-slate-700 text-center">Gerencie o relacionamento com seus clientes de forma <span
+              class="text-inpulse">eficiente</span>, centralizando toda a comunicação, desde o
+            atendimento até as negociações,
+            em um <span class="text-inpulse">único ambiente</span> integrado ao aplicativo de mensagens
+            instantâneas.
+          </p>
+          <hr>
+          <div class="text-center mt-8 text-slate-800 ">
+            <div class="flex-row gap-4 align-center h-content mx-center w-content">
+              <div class="flex-column gap-4">
+                <div class="floating-icon mobile inpulse">
+                  <img src="./assets/icons/tv-solid.svg" />
+                  <h1>Monitore seus atendimentos em tempo real</h1>
                 </div>
-            </section>
-            <section class="p-bot-12 p-top-12 bg-transparent">
-                <div class="flex-row jc-spaceb">
-                    <p class="ts-mb">+<span id="projetos-implanatados">0</span> projetos impantados</p>
-                    <p class="ts-mb">+<span id="pessoas-treinadas">1</span> pessoas Treinadas e Selecionadas</p>
-                    <p class="ts-mb">+<span id="treinamentos-executados">1</span> Treinamentos executados</p>
+                <div class="floating-icon mobile inpulse">
+                  <img src="./assets/icons/paper-plane-solid.svg" />
+                  <h1>Envie mensagens rápidas com templates prontos</h1>
                 </div>
-            </section>
-            <section id="nossasSolucoes" class="p-bot-12 p-top-12 bg-white">
-                <div class="flex-column gap-4">
-                    <h1 class="ts-titulo-big tcenter m-bot-8">Nossas <span class="tc-highlight-i">soluções</span></h1>
-                    <h2 class="ts-titulo-med tcenter">
-                        O In.Pulse foi projetado para facilitar o <span class="tc-highlight-i ">atendimento e a venda</span> aos seus clientes. Sua equipe fazendo ligações diretamente do CRM com a solução integrada à telefonia.
-                    </h2>
-                    <p class="ts-bb tcenter m-bot-4 m-top-8">Um sistema <span class="tc-highlight-i">simples</span> e <span class="tc-highlight-i">eficiente</span>!</p>
-                    
-                    <div class="icons-inPulse flex-row jc-spaceb">
-                        <div class="floating-icon-inPulse">
-                            <img src="./assets/icons/product-hunt-brands-solid.svg">
-                            <h1>Impulsione a produtividade e controle da sua equipe</h1>
-                        </div>
-                        <div class="floating-icon-inPulse">
-                            <img src="./assets/icons/people-roof-solid.svg">
-                            <h1>Visão completa da operação com gestão ativa de clientes</h1>
-                        </div>
-                        <div class="floating-icon-inPulse">
-                            <img src="./assets/icons/phone-solid.svg">
-                            <h1>Gravação de chamadas para máxima segurança e qualidade</h1>
-                        </div>
-                        <div class="floating-icon-inPulse">
-                            <img src="./assets/icons/bullseye-solid.svg">
-                            <h1>Centralize informações e contatos em um único ambiente</h1>
-                        </div>
-                        <div class="floating-icon-inPulse">
-                            <img src="./assets/icons/calendar-days-solid.svg">
-                            <h1>Agenda inteligente e automatizada para máxima eficiência</h1>
-                        </div>
-                        <div class="floating-icon-inPulse">
-                            <img src="./assets/icons/laptop-medical-solid.svg">
-                            <h1>Relatórios de gestão em diversos formatos para análise estratégica</h1>
-                        </div>
-                    </div> <!--floating-icons-inPulse--> 
-                    <img class="bg-white m-top-8" src="./assets/img/inPulseImagem.png">
+                <div class="floating-icon mobile inpulse">
+                  <img src="./assets/icons/wand-magic-solid.svg" />
+                  <h1>Automatize seu atendimento com bots customizáveis</h1>
                 </div>
-            </section>
-            <section class="box-shadow p-bot-12 p-top-12 bg-white">
-                <div class="flex-column gap-4">
-                    <h1 class="tcenter">in.Pulse <span class="tc-highlight-i">WhatsApp</span></h1>
-                    <h2 class="titulo-med tcenter">Gerencie o relacionamento com seus clientes de forma <span class="tc-highlight-i">eficiente</span>, centralizando toda a comunicação, desde o atendimento até as negociações, 
-                        em um <span class="tc-highlight-i">único ambiente</span> integrado ao aplicativo de mensagens instantâneas.
-                    </h2>
-                    <div class="tcenter m-top-8">
-                        <div class="grid-container">
-                            <div class="floating-icon-ferramenta">
-                                <img src="./assets/icons/tv-solid.svg" />
-                                <h1>Monitore seus atendimentos em tempo real</h1>
-                            </div>
-                            <div class="floating-icon-ferramenta">
-                                <img src="./assets/icons/paper-plane-solid.svg" />
-                                <h1>Envie mensagens rápidas com templates prontos</h1>
-                            </div>
-                            <div class="floating-icon-ferramenta">
-                                <img src="./assets/icons/wand-magic-solid.svg" />
-                                <h1>Automatize seu atendimento com bots customizáveis</h1>
-                            </div>
-                            <div class="floating-icon-ferramenta">
-                                <img src="./assets/icons/square-whatsapp-brands-solid.svg" />
-                                <h1>Utilize quantos números de WhatsApp você necessitar</h1>
-                            </div>
-                            <div class="floating-icon-ferramenta">
-                                <img src="./assets/icons/table-columns-solid.svg" />
-                                <h1>Organize o atendimento da sua empresa em setores</h1>
-                            </div>
-                            <div class="floating-icon-ferramenta">
-                                <img src="./assets/icons/user-plus-solid.svg" />
-                                <h1>Usuários ilimitados</h1>
-                            </div>
-                            <img class="img-min tcenter jc-center central-image" src="./assets/img/moclupinfotec.png" alt="Mockup">
-                        </div>
-                    </div>    
-            </section>
-            <section class="box-shadow p-bot-12 p-top-12 bg-white">
-                <div class="flex-column gap-4">
-                    <h1 class="tcenter">Consultoria <span class="tc-highlight">especializada</span></h1>
-                    <h2 class="tcenter">Ao longo de nossa experiência implantando operações de vendas na indústria, desenvolvemos e refinamos uma metodologia <span class="tc-highlight">clara</span> e <span class="tc-highlight-i">eficaz</span>. 
-                        Hoje, é fácil destacar os principais fundamentos que sustentam essa abordagem:
-                    </h2>
-                    <div class="flex-row gap-8 m-top-8 jc-spaceb">
-                        <div class="floating-icon-consultoria">
-                            <img src="./assets/icons/users-solid.svg" />
-                            <h1>PESSOAS</h1>
-                        </div>
-                        <div class="floating-icon-consultoria">
-                            <img src="./assets/icons/gears-solid.svg" />
-                            <h1>PROCESSOS</h1>
-                        </div>
-                        <div class="floating-icon-consultoria">
-                            <img src="./assets/icons/building-shield-solid.svg" />
-                            <h1>INFRAESTRUTURA</h1>
-                    </div>
+              </div>
+              <img class="img-sm mb:img-xs text-center justify-center" src="./assets/img/moclupinfotec.png" alt="Mockup">
+              <div class="flex-column gap-4">
+                <div class="floating-icon mobile inpulse">
+                  <img src="./assets/icons/square-whatsapp-brands-solid.svg" />
+                  <h1>Utilize quantos números de WhatsApp você necessitar</h1>
                 </div>
-               <hr class="m-bot-8 m-top-12">
-                <h2 class="tcenter ts-titulo-med">Um pouco sobre <span class="tc-highlight">nossa</span> metodologia</h2>
-
-                <div class="flex-row jc-spaceb m-top-8 gap-4">
-                    <div class="floating-icon-consultoria-desc">
-                        <img src="./assets/icons/cart-plus-solid.svg" alt="">
-                        <h1>Transforme seu canal de vendas</h1>
-                        <div class="flex-row">
-                            <p>Com uma implantação ou reestruturação estratégica, sua equipe estará pronta para alcançar resultados extraordinários. Planejamos cada detalhe do setor, desde a criação de um cronograma de ações até a definição de metas e indicadores de performance.</p>
-                        </div>
-                    </div>
-                    <div class="floating-icon-consultoria-desc">
-                        <img src="./assets/icons/people-group-solid.svg" alt="">
-                        <h1>Seleção e treinamento de Equipe</h1>
-                        <div class="flex-row">
-                            <p>Identificamos e gerenciamos a contratação de supervisores, vendedores e atendentes, garantindo que cada membro esteja alinhado com os objetivos do seu negócio. Oferecemos treinamentos especializados para supervisão, backoffice e atendimento, preparando sua equipe para a excelência.</p>
-                        </div>
-                    </div>
-                    <div class="floating-icon-consultoria-desc">
-                        <img src="./assets/icons/chart-line-solid.svg" alt="">
-                        <h1>Desempenho sob controle</h1>
-                        <div class="flex-row">
-                            <p>Implantamos indicadores-chave que medem o sucesso e identificamos oportunidades de melhoria. Nossa abordagem inclui monitorias de qualidade regulares e campanhas motivacionais mensais para manter a equipe engajada e motivada.</p>
-                        </div>
-                    </div>
-                    <div class="floating-icon-consultoria-desc">
-                        <img src="./assets/icons/face-smile-wink-solid.svg" alt="">
-                        <h1>Infraestrutura e Motivação</h1>
-                        <div class="flex-row">
-                            <p>Auxiliamos na criação da infraestrutura ideal para o setor, sugerindo ajustes e implementações que maximizam a eficiência. Além disso, elaboramos campanhas de bonificação para incentivar a performance, criando um ambiente onde o sucesso é recompensado.</p>
-                        </div>
-                    </div>
+                <div class="floating-icon mobile inpulse">
+                  <img src="./assets/icons/table-columns-solid.svg" />
+                  <h1>Organize o atendimento da sua empresa em setores</h1>
                 </div>
-            </section>
-        </main>
-        
-        <footer class="bg-grey box-shadow flex-row jc-spaceb">
+                <div class="floating-icon mobile inpulse">
+                  <img src="./assets/icons/user-plus-solid.svg" />
+                  <h1>Usuários ilimitados</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="pb-12 pt-12 bg-grey">
+        <div class="flex-column gap-4">
+          <h2 class="text-6xl text-slate-900 font-600 text-center">
+            Consultoria <span class="text-infotec">especializada</span>
+          </h2>
+          <p class="text-lg text-slate-700 text-center">Ao longo de nossa experiência implantando operações de vendas na
+            indústria,
+            desenvolvemos e refinamos uma metodologia <span class="text-infotec">clara</span> e <span
+              class="text-inpulse">eficaz</span>.
+            Hoje, é fácil destacar os principais fundamentos que sustentam essa abordagem:
+          </p>
+          <div class="flex-row flex-wrap gap-12 mb:gap-2 mx-center">
+            <div class="floating-icon ">
+              <img src="./assets/icons/users-solid.svg" />
+              <h1>PESSOAS</h1>
+            </div>
+            <div class="floating-icon ">
+              <img src="./assets/icons/gears-solid.svg" />
+              <h1>PROCESSOS</h1>
+            </div>
+            <div class="floating-icon ">
+              <img src="./assets/icons/building-shield-solid.svg" />
+              <h1>INFRAESTRUTURA</h1>
+            </div>
+          </div>
+          <hr>
+          <h2 class="text-4xl text-slate-900 font-600 text-center">
+            Um pouco sobre <span class="text-infotec">nossa</span> metodologia
+          </h2>
+          <div class="flex-row flex-wrap justify-between mt-2 gap-4">
             <div class="flex-column gap-2">
-                <h2>Endereço</h2>
-                <p>São Leopoldo > Rio Grande do Sul > Brasil</p>
-                <p>(51) 3590-3197</p>
-                <p>Gerencia@infotecrs.inf.br</p>
+              <div class="floating-icon horizontal h-16">
+                <img src="./assets/icons/cart-plus-solid.svg" alt="">
+                <h1 class="text-slate-900">Transforme seu canal de vendas</h1>
+              </div>
+              <p class="text-lg">Com uma implantação ou reestruturação estratégica, sua equipe estará pronta para
+                alcançar resultados extraordinários. Planejamos cada detalhe do setor, desde a
+                criação de um cronograma de ações até a definição de metas e indicadores de
+                performance.
+              </p>
             </div>
+
             <div class="flex-column gap-2">
-                <h2>Infotec Solution Provider</h2>
-                <div class="flex-row gap-2">
-                    <a href="https://www.instagram.com/infotec_solutionp/" target="_blank" ><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/infotecsolution-provider/posts/?feedView=all" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://www.instagram.com/infotec_solutionp/" target="_blank"><i class="bi bi-facebook"></i></a>
-                </div>
-                <p>© 2024 Infotec Inc.</p>
+              <div class="floating-icon horizontal h-16">
+                <img src="./assets/icons/people-group-solid.svg" alt="">
+                <h1 class="text-slate-900">Seleção e treinamento de Equipe</h1>
+              </div>
+              <p class="text-lg">
+                Identificamos e gerenciamos a contratação de supervisores, vendedores e atendentes,
+                garantindo que cada membro esteja alinhado com os objetivos do seu negócio.
+                Oferecemos treinamentos especializados para supervisão, backoffice e atendimento,
+                preparando sua equipe para a excelência.
+              </p>
             </div>
-        </footer>
+
+            <div class="flex-column gap-2">
+              <div class="floating-icon horizontal h-16">
+                <img src="./assets/icons/chart-line-solid.svg" alt="">
+                <h1 class="text-slate-900">Desempenho sob controle</h1>
+              </div>
+              <p class="text-lg">
+                Implantamos indicadores-chave que medem o sucesso e identificamos oportunidades de
+                melhoria. Nossa abordagem inclui monitorias de qualidade regulares e campanhas
+                motivacionais mensais para manter a equipe engajada e motivada.
+              </p>
+            </div>
+
+            <div class="flex-column gap-2">
+              <div class="floating-icon horizontal h-16">
+                <img src="./assets/icons/face-smile-wink-solid.svg" alt="">
+                <h1 class="text-slate-900">Infraestrutura e Motivação</h1>
+              </div>
+              <p class="text-lg">
+                Auxiliamos na criação da infraestrutura ideal para o setor, sugerindo ajustes e
+                implementações que maximizam a eficiência. Além disso, elaboramos campanhas de
+                bonificação para incentivar a performance, criando um ambiente onde o sucesso é
+                recompensado.
+              </p>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="bg-transparent box-full">
+      <div class="box-default flex-row flex-wrap text-slate-50 pb-4 pt-8 justify-between mb:gap-4">
+        <div class="flex-column gap-2">
+          <h2 class="text-lg font-500">Endereço</h2>
+          <p>Rio Grande do Sul > São Leopoldo </p>
+          <p>(51) 3590-3197</p>
+          <p>Gerencia@infotecrs.inf.br</p>
+        </div>
+        <div class="flex-column justify-between align-end text-end mb:gap-2 mb:text-start mb:align-start">
+          <div class="flex-row gap-2 text-2xl">
+            <a href="https://www.instagram.com/infotec_solutionp/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/infotecsolution-provider/posts/?feedView=all" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/infotec_solutionp/" target="_blank"><i class="bi bi-facebook"></i></a>
+          </div>
+          <p>© 2024 Infotec Inc.</p>
+        </div>
+      </div>
+    </footer>
 
 </body>
 

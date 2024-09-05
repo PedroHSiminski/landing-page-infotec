@@ -1,0 +1,15 @@
+.radius-1 {
+    border-radius: calc(var(--base-size) * 0.25);
+}
+
+.radius-2 {
+    border-radius: calc(var(--base-size) * 0.5);
+}
+
+.radius-3 {
+    border-radius: calc(var(--base-size) * 0.75);
+}
+
+.radius-4 {
+    border-radius: var(--base-size);
+}

@@ -1,0 +1,21 @@
+{
+	"header": {
+		"title": "Infotec Solution Provider",
+		"subtitle": "Aumente a performance da sua equipe de vendas e melhore o atendimento dos seus clientes."
+	},
+	"sections": {
+		"quemSomos": {
+			"heading": "QUEM SOMOS",
+			"description": "Pioneiros no desenvolvimento de um sistema CRM sob medida para operações de vendas em indústrias!"
+		},
+		"nossasSolucoes": {
+			"heading": "Nossas soluções",
+			"description": "O In.Pulse foi projetado para facilitar o atendimento e a venda aos seus clientes."
+		}
+	},
+	"footer": {
+		"address": "São Leopoldo > Rio Grande do Sul > Brasil",
+		"phone": "(51) 3590-3197",
+		"email": "Gerencia@infotecrs.inf.br"
+	}
+}

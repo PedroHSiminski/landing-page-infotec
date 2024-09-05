@@ -1,4 +1,5 @@
 import animatedCount from './scripts/animations/count.js';
+import { typeWriter } from './scripts/animations/writing.js';
 
 /* insere animaçào de contagem */
 const projetosImplantados = document.getElementById("projetos-implanatados");
@@ -28,3 +29,10 @@ animatedCount({
     increment: 50,
     element: treinamentosExecutados
 });
+
+
+/* typeWriter({
+    element: document.getElementById("welcome-title"),
+    texts: ["Seja bem vindo(a)", "Infotec Solution Provider"],
+    delay: 200
+}); */

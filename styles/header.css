@@ -1,68 +1,21 @@
 /* HEADER  */
-header {
-    padding: 30px 4%;
-}
-
-.header-link {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
-
-.header-link:hover {
-    transform: scale(1.05);
-}
-
-.page-nav ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
 .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 20px;
-    background-color: #3B8395;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    transition: .2s;
+	background-color: #3b8395;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	transition: 0.3s;
 }
 
 .btn-contato button:hover {
-    box-shadow: 5px 5px 6px black;
-    transform: scale(1.05);
-    background-color: #57AFB6;
+	background-color: #e4ebee;
+	color: #2b777c;
 }
 
-header .textos {
-    display: flex;
-    gap: 70px;
-    flex-direction: column;
-}
 
-/* TEXTOS HEADER */
-
-header .textos .titulo {
-    margin-top: 100px;
-}
-
-header .textos p {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-/* Logo */
-.h-logo {
-    width: 16rem;
-}
-
-.h-logo a {
-    width: 100%;
-}
-
-.h-logo img {
-    width: 100%;
+@media (max-width: 40rem) {
+	header nav {
+		display: none !important;
+		background-color: red;
+	}
 }

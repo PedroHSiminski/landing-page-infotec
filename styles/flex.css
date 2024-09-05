@@ -1,32 +1,100 @@
 /* flex-types */
 .flex-column {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
 }
 
 /* alinhamentos */
-.jc-center {
-    justify-content: center;
+.justify-center {
+	justify-content: center;
 }
 
-.jc-spaceb {
-    justify-content: space-between;
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
 }
 
 /* gaps */
+.gap-16 {
+	gap: calc(var(--base-size) * 8);
+	row-gap: calc(var(--base-size) * 8);
+}
+.gap-12 {
+	gap: calc(var(--base-size) * 6);
+	row-gap: calc(var(--base-size) * 6);
+}
+.gap-8 {
+	gap: calc(var(--base-size) * 4);
+	row-gap: calc(var(--base-size) * 4);
+}
 .gap-4 {
-    gap: 2rem;
+	gap: calc(var(--base-size) * 2);
+	row-gap: calc(var(--base-size) * 2);
 }
 .gap-2 {
-    gap: 1rem;
+	gap: var(--base-size);
+	row-gap: var(--base-size);
+}
+.gap-1 {
+	gap: calc(var(--base-size) * 0.5);
+	row-gap: calc(var(--base-size) * 0.5);
+}
+.gap-0 {
+	gap: calc(var(--base-size) * 0.25);
+	row-gap: calc(var(--base-size) * 0.25);
 }
 
+.align-end {
+	align-items: end;
+}
 
-.gap-8 {
-    gap: 4rem;
+.align-center {
+	align-items: center;
+}
+
+@media (max-width: 60rem) {
+	.mb\:gap-16 {
+        gap: calc(var(--base-size) * 8);
+        row-gap: calc(var(--base-size) * 8);
+    }
+    .mb\:gap-12 {
+        gap: calc(var(--base-size) * 6);
+        row-gap: calc(var(--base-size) * 6);
+    }
+    .mb\:gap-8 {
+        gap: calc(var(--base-size) * 4);
+        row-gap: calc(var(--base-size) * 4);
+    }
+    .mb\:gap-4 {
+        gap: calc(var(--base-size) * 2);
+        row-gap: calc(var(--base-size) * 2);
+    }
+    .mb\:gap-2 {
+        gap: var(--base-size);
+        row-gap: var(--base-size);
+    }
+    .mb\:gap-1 {
+        gap: calc(var(--base-size) * 0.5);
+        row-gap: calc(var(--base-size) * 0.5);
+    }
+    .mb\:gap-0 {
+        gap: calc(var(--base-size) * 0.25);
+        row-gap: calc(var(--base-size) * 0.25);
+    }
+
+    .mb\:align-start {
+        align-items: start;
+    }
 }

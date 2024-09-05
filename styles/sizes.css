@@ -2,13 +2,65 @@
     width: 50%;
 }
 
-/* IMAGENS */
 .img-big {
-    width: 70rem;
+    width: calc(var(--base-size) * 60);
+    object-fit: contain;
 }
-.img-med {
-    width: 40rem;
+.img-base {
+    width: calc(var(--base-size) * 40);
+    object-fit: contain;
 }
-.img-min {
-    width: 20rem;
+.img-sm {
+    width: calc(var(--base-size) * 20);
+    object-fit: contain;
+}
+
+.img-xs {
+    width: calc(var(--base-size) * 10);
+    object-fit: contain;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-content {
+    height: max-content;
+}
+
+.w-content {
+    width: max-content;
+}
+
+.w-1\/4 {
+    width: 1/4;
+}
+
+.h-16 {
+    height: calc(var(--base-size) * 9);
+} 
+
+@media (max-width: 60rem) {
+    .mb\:img-big {
+        width: calc(var(--base-size) * 60);
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .mb\:img-base {
+        width: calc(var(--base-size) * 40);
+        object-fit: contain;
+    }
+    .mb\:img-sm {
+        width: calc(var(--base-size) * 20);
+        object-fit: contain;
+    }
+    
+    .mb\:img-xs {
+        width: calc(var(--base-size) * 10);
+        object-fit: contain;
+    }
+
+    .h-16 {
+        height: auto;
+    } 
 }
