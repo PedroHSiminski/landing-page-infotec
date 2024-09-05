@@ -146,3 +146,7 @@ button:disabled {
 .fade-in.visible {
     opacity: 1;
 }
+
+p {
+	line-height: 150%;
+}
