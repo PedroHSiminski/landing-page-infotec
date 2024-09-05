@@ -53,9 +53,3 @@ hr {
 		--base-size: 0.875rem;
 	}
 }
-
-@media (max-width: 50rem) {
-	:root {
-		--base-size: 0.75rem;
-	}
-}

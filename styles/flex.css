@@ -64,7 +64,7 @@
 	align-items: center;
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 40rem) {
 	.mb\:gap-16 {
         gap: calc(var(--base-size) * 8);
         row-gap: calc(var(--base-size) * 8);

@@ -16,8 +16,14 @@
 }
 
 .img-xs {
-    width: calc(var(--base-size) * 10);
+    width: calc(var(--base-size) * 15);
     object-fit: contain;
+}
+
+.logo {
+    width: 15rem;
+    object-fit: contain;
+    object-position: center;
 }
 
 .h-full {
@@ -40,7 +46,57 @@
     height: calc(var(--base-size) * 9);
 } 
 
-@media (max-width: 60rem) {
+.icon-16xl {
+	height: calc(var(--base-size) * 20);
+    object-fit: contain;
+}
+.icon-12xl {
+	height: calc(var(--base-size) * 16);
+    width: calc(var(--base-size) * 16);
+    object-fit: contain;
+}
+.icon-8xl {
+	height: calc(var(--base-size) * 12);
+    width: calc(var(--base-size) * 12);
+    object-fit: contain;
+}
+.icon-4xl {
+	height: calc(var(--base-size) * 8);
+    width: calc(var(--base-size) * 8);
+    object-fit: contain;
+}
+.icon-2xl {
+	height: calc(var(--base-size) * 6);
+    width: calc(var(--base-size) * 6);
+    object-fit: contain;
+}
+.icon-xl {
+	height: calc(var(--base-size) * 4);
+    width: calc(var(--base-size) * 4);
+    object-fit: contain;
+}
+.icon-lg {
+	height: calc(var(--base-size) * 3);
+    width: calc(var(--base-size) * 3);
+    object-fit: contain;
+}
+.icon-base {
+	height: calc(var(--base-size) * 2);
+    width: calc(var(--base-size) * 2);
+    object-fit: contain;
+}
+.icon-sm {
+	height: calc(var(--base-size) * 1.5);
+    width: calc(var(--base-size) * 1.5);
+    object-fit: contain;
+}
+.icon-xs {
+	height: calc(var(--base-size) * 1);
+    width: calc(var(--base-size) * 1);
+    object-fit: contain;
+}
+
+@media (max-width: 40rem) {
     .mb\:img-big {
         width: calc(var(--base-size) * 60);
         max-width: 100%;
@@ -56,11 +112,65 @@
     }
     
     .mb\:img-xs {
-        width: calc(var(--base-size) * 10);
+        width: calc(var(--base-size) * 15);
         object-fit: contain;
     }
 
     .h-16 {
         height: auto;
     } 
+
+    .logo {
+        width: 10rem;
+    }
+
+    .mb\:icon-16xl {
+        height: calc(var(--base-size) * 20);
+        object-fit: contain;
+    }
+    .mb\:icon-12xl {
+        height: calc(var(--base-size) * 16);
+        width: calc(var(--base-size) * 16);
+        object-fit: contain;
+    }
+    .mb\:icon-8xl {
+        height: calc(var(--base-size) * 12);
+        width: calc(var(--base-size) * 12);
+        object-fit: contain;
+    }
+    .mb\:icon-4xl {
+        height: calc(var(--base-size) * 8);
+        width: calc(var(--base-size) * 8);
+        object-fit: contain;
+    }
+    .mb\:icon-2xl {
+        height: calc(var(--base-size) * 6);
+        width: calc(var(--base-size) * 6);
+        object-fit: contain;
+    }
+    .mb\:icon-xl {
+        height: calc(var(--base-size) * 4);
+        width: calc(var(--base-size) * 4);
+        object-fit: contain;
+    }
+    .mb\:icon-lg {
+        height: calc(var(--base-size) * 3);
+        width: calc(var(--base-size) * 3);
+        object-fit: contain;
+    }
+    .mb\:icon-base {
+        height: calc(var(--base-size) * 2);
+        width: calc(var(--base-size) * 2);
+        object-fit: contain;
+    }
+    .mb\:icon-sm {
+        height: calc(var(--base-size) * 1.5);
+        width: calc(var(--base-size) * 1.5);
+        object-fit: contain;
+    }
+    .mb\:icon-xs {
+        height: calc(var(--base-size) * 1);
+        width: calc(var(--base-size) * 1);
+        object-fit: contain;
+    }
 }

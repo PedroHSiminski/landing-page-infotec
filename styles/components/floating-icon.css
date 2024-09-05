@@ -6,13 +6,6 @@
 	width: calc(var(--base-size) * 8);
 }
 
-.floating-icon img {
-	width: calc(var(--base-size) * 4);
-	height: calc(var(--base-size) * 4);
-
-	cursor: pointer;
-}
-
 .floating-icon > img {
 	filter: invert(31%) sepia(47%) saturate(2388%) hue-rotate(181deg)
 		brightness(91%) contrast(93%);
