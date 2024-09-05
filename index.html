@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="./styles/background.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/sizes.css">
-  <link rel="stylesheet" href="./styles/components/floating-icon.css">
-  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/border.css">
   <link rel="stylesheet" href="./styles/containers.css">
+  <link rel="stylesheet" href="./styles/components/floating-icon.css">
+  <link rel="stylesheet" href="./styles/components/step.css">
   <link rel="icon" href="./assets/img/logoInfotecAba.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -28,7 +28,7 @@
   <div id="background1">
     <header class="bg-transparent text-slate-100 box-full">
       <div class="box-default pt-4 pb-12">
-        <div class="flex-row justify-between gap-4">
+        <div class="flex-row justify-between gap-4 align-center">
           <div>
             <a href="#">
               <img class="logo" src="assets/logos/logo-infotec.png" alt="">
@@ -44,7 +44,7 @@
 
           <div class="btn-contato">
             <a href="#">
-              <button class="text-base text-slate-50 px-2 py-1 radius-2">Fale conosco</button>
+              <button class="text-lg text-slate-50 px-2 py-1 radius-2">Fale conosco</button>
             </a>
           </div>
 
@@ -112,12 +112,85 @@
       </section>
       <section class="pb-12 pt-12 bg-transparent text-slate-50">
         <div class="flex-row justify-between text-lg font-600 gap-2">
-          <p >+<span id="projetos-implanatados">0</span> projetos impantados</p>
-          <p >+<span id="pessoas-treinadas">1</span> pessoas treinadas</p>
-          <p >+<span id="treinamentos-executados">1</span> treinamentos executados</p>
+          <p>+<span id="projetos-implanatados">0</span> projetos impantados</p>
+          <p>+<span id="pessoas-treinadas">1</span> pessoas treinadas</p>
+          <p>+<span id="treinamentos-executados">1</span> treinamentos executados</p>
         </div>
       </section>
-      <section id="solutions" class="pb-12 pt-12 bg-grey">
+      <section class="pb-12 pt-12 bg-grey">
+        <div class="flex-column gap-4">
+          <h2 class="text-6xl text-slate-900 font-600 text-center">
+            Nosso processo de trabalho
+          </h2>
+          <p class="text-2xl text-slate-700 text-center">
+            Cada etapa é essencial para o sucesso do projeto. A Infotec adota um processo claro, desde a análise até a
+            entrega, para garantir soluções eficazes e alinhadas com o cliente.
+          </p>
+          <div class="mb:carrousel">
+            <div>
+              <button class="h-full" id="btn-wpc-left">
+                <img class="icon-lg" src="./assets/icons/chevron-left-solid.svg">
+              </button>
+            </div>
+            <div class="flex-row" id="wpc-display">
+              <div class="step mb:visible">
+                <div>
+                  <span class="line"></span>
+                  <span class="number">
+                    <p>1</p>
+                  </span>
+                  <span class="line"></span>
+                </div>
+                <h2 class="text-center text-lg font-500">Entendimento da necessidade do cliente</h2>
+                <p class="text-center text-base">Analisamos detalhadamente as necessidades e expectativas do cliente
+                  para garantir que nossas soluções atendam exatamente ao que é necessário.</p>
+              </div>
+              <div class="step">
+                <div>
+                  <span class="line"></span>
+                  <span class="number">
+                    <p>2</p>
+                  </span>
+                  <span class="line"></span>
+                </div>
+                <h2 class="text-center text-lg font-500">Confecção da proposta de trabalho</h2>
+                <p class="text-center text-base">Desenvolvemos uma proposta detalhada, incluindo escopo, cronograma e
+                  orçamento, para alinhar as expectativas e definir claramente o plano de ação.</p>
+              </div>
+              <div class="step">
+                <div>
+                  <span class="line"></span>
+                  <span class="number">
+                    <p>3</p>
+                  </span>
+                  <span class="line"></span>
+                </div>
+                <h2 class="text-center text-lg font-500">Planejamento do Projeto</h2>
+                <p class="text-center text-base">Estruturamos o projeto em etapas com metas e prazos definidos,
+                  garantindo uma execução organizada e eficiente de todas as atividades.</p>
+              </div>
+              <div class="step">
+                <div>
+                  <span class="line"></span>
+                  <span class="number">
+                    <p>4</p>
+                  </span>
+                  <span class="line"></span>
+                </div>
+                <h2 class="text-center text-lg font-500">Atualizações contínuas</h2>
+                <p class="text-center text-base">Fornecemos atualizações regulares sobre o progresso do projeto,
+                  mantendo o cliente informado e ajustando o plano conforme necessário para atender às mudanças.</p>
+              </div>
+            </div>
+            <div>
+              <button class="text-lg text-slate-900" id="btn-wpc-right">
+                <img class="icon-lg" src="./assets/icons/chevron-right-solid.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="solutions" class="pb-12 pt-12 bg-white">
         <div class="flex-column gap-4">
           <h2 class="text-6xl text-slate-900 font-600 text-center">
             in.Pulse <span class="text-inpulse">CRM</span>
@@ -132,7 +205,7 @@
             <span class="text-inpulse">eficiente</span>!
           </p>
           <hr>
-          <div class="flex-row flex-wrap gap-4 justify-center text-slate-800 text-base text-center font-500">
+          <div class="flex-row flex-wrap gap-6 justify-center text-slate-800 text-base text-center font-500">
             <div class="floating-icon inpulse">
               <img class="icon-xl" src="./assets/icons/product-hunt-brands-solid.svg">
               <p>Impulsione a produtividade e controle da sua equipe</p>
@@ -161,7 +234,7 @@
           <img class="mt-8 img-big mb:img-sm mx-center" src="./assets/img/inPulseImagem.png">
         </div>
       </section>
-      <section class="pb-12 pt-12 bg-white">
+      <section class="pb-12 pt-12 bg-grey">
         <div class="flex-column gap-4">
           <h2 class="text-6xl text-slate-900 font-600 text-center">
             in.Pulse <span class="text-inpulse">WhatsApp</span>
@@ -177,48 +250,51 @@
             <div class="flex-row gap-4 align-center h-content mx-center w-content">
               <div class="flex-column gap-4 text-center text-base font-500">
                 <div class="floating-icon mobile inpulse">
-                  <img class="icon-2xl" src="./assets/icons/tv-solid.svg" />
+                  <img class="icon-2xl mb:icon-base" src="./assets/icons/tv-solid.svg" />
                   <p>Monitore seus atendimentos em tempo real</p>
                 </div>
                 <div class="floating-icon mobile inpulse">
-                  <img class="icon-2xl" src="./assets/icons/paper-plane-solid.svg" />
+                  <img class="icon-2xl mb:icon-base" src="./assets/icons/paper-plane-solid.svg" />
                   <p>Envie mensagens rápidas com templates prontos</p>
                 </div>
                 <div class="floating-icon mobile inpulse">
-                  <img class="icon-2xl" src="./assets/icons/wand-magic-solid.svg" />
+                  <img class="icon-2xl mb:icon-base" src="./assets/icons/wand-magic-solid.svg" />
                   <p>Automatize seu atendimento com bots customizáveis</p>
                 </div>
               </div>
-              <img class="img-sm mb:img-xs text-center justify-center" src="./assets/img/moclupinfotec.png" alt="Mockup">
+              <img class="img-sm mb:img-xs text-center justify-center" src="./assets/img/moclupinfotec.png"
+                alt="Mockup">
               <div class="flex-column gap-4 text-center text-base font-500">
                 <div class="floating-icon mobile inpulse">
-                  <img class="icon-2xl" src="./assets/icons/square-whatsapp-brands-solid.svg" />
+                  <img class="icon-2xl mb:icon-base" src="./assets/icons/square-whatsapp-brands-solid.svg" />
                   <p>Utilize quantos números de WhatsApp você necessitar</p>
                 </div>
                 <div class="floating-icon mobile inpulse">
-                  <img class="icon-2xl" src="./assets/icons/table-columns-solid.svg" />
+                  <img class="icon-2xl mb:icon-base" src="./assets/icons/table-columns-solid.svg" />
                   <p>Organize o atendimento da sua empresa em setores</p>
                 </div>
                 <div class="floating-icon mobile inpulse">
-                  <img class="icon-2xl" src="./assets/icons/user-plus-solid.svg" />
+                  <img class="icon-2xl mb:icon-base" src="./assets/icons/user-plus-solid.svg" />
                   <p>Usuários ilimitados</p>
                 </div>
               </div>
             </div>
           </div>
       </section>
-      <section class="pb-12 pt-12 bg-grey">
+      <section class="pb-12 pt-12 bg-white">
         <div class="flex-column gap-4">
           <h2 class="text-6xl text-slate-900 font-600 text-center mb-2">
             Consultoria <span class="text-infotec">especializada</span>
           </h2>
-          <p class="text-lg text-slate-700 text-center mb-4">Ao longo de nossa experiência implantando operações de vendas na
+          <p class="text-lg text-slate-700 text-center mb-4">Ao longo de nossa experiência implantando operações de
+            vendas na
             indústria,
             desenvolvemos e refinamos uma metodologia <span class="text-infotec">clara</span> e <span
               class="text-inpulse">eficaz</span>.
             Hoje, é fácil destacar os principais fundamentos que sustentam essa abordagem:
           </p>
-          <div class="flex-row flex-wrap gap-16 mb:gap-8 mx-center text-center text-xl font-500 justify-center align-center">
+          <div
+            class="flex-row flex-wrap gap-16 mb:gap-8 mx-center text-center text-xl font-500 justify-center align-center">
             <div class="floating-icon ">
               <img class="icon-2xl mb:icon-xl" src="./assets/icons/users-solid.svg" />
               <p>PESSOAS</p>
@@ -288,8 +364,80 @@
             </div>
           </div>
       </section>
+      <section class="pb-12 pt-12 bg-grey">
+        <div class="flex-column gap-4">
+          <h2 class="text-6xl text-slate-900 font-600 text-center mb-4">
+            O que falam sobre a <span class="text-infotec">Infotec</span>
+          </h2>
+          <div class="carrousel">
+            <div>
+              <button class="h-full" id="btn-coc-left">
+                <img class="icon-lg" src="./assets/icons/chevron-left-solid.svg">
+              </button>
+            </div>
+            <div class="flex-row justify-around" id="coc-display">
+              <div class="flex-column gap-4 align-center maxw-32">
+                <div class="customer">
+                  <img src="assets/customers/karsten.png">
+                </div>
+                <p class="text-base">
+                  "O sistema é bastante completo, e as customizações efetuadas na última atualização deixou o sistema
+                  bem mais prático e versátil atendendo melhor a nossa necessidade. As configurações são práticas e
+                  ajustáveis o que nos permite fazer alterações conforme a necessidade, bem como gerar relatórios que
+                  auxiliam na gestão e no melhoramento da eficiência da operação."
+                </p>
+              </div>
+              <div class="flex-column gap-4 align-center maxw-32">
+                <div class="customer">
+                  <img src="assets/customers/oxford.png">
+                </div>
+                <p class="text-base">
+                  "Implantamos o SGR (InPulse), à 06 anos atrás, um sistema ideal para o nosso Televendas. Onde
+                  conseguimos colocar o maior número de informações, compras, históricos, as ligações ficam todas
+                  gravadas, contribuindo para o sucesso, segurança e agilidade na operação diariamente. É ótimo também,
+                  na geração de relatórios, pois conseguimos gerar com muita rapidez e precisão."
+                </p>
+              </div>
+            </div>
+            <div>
+              <button class="text-lg text-slate-900" id="btn-coc-right">
+                <img class="icon-lg" src="./assets/icons/chevron-right-solid.svg">
+              </button>
+            </div>
+          </div>
+          <hr>
+          <h2 class="text-4xl text-slate-900 font-600 text-center mb-4">
+            Empresas que <span class="text-inpulse">potencializaram</span> seus canais de vendas
+          </h2>
+          <div class="carrousel">
+            <div>
+              <button class="h-full" id="btn-cc-left">
+                <img class="icon-lg" src="./assets/icons/chevron-left-solid.svg">
+              </button>
+            </div>
+            <div class="flex-row justify-around" id="cc-display">
+              <div class="customer"><img src="assets/customers/karsten.png"></div>
+              <div class="customer"><img src="assets/customers/oxford.png"></div>
+              <div class="customer"><img src="assets/customers/natrielli.jpg"></div>
+              <div class="customer"><img src="assets/customers/sayerlack.png"></div>
+              <div class="customer"><img src="assets/customers/odim.png"></div>
+              <div class="customer hidden"><img src="assets/customers/brilia.png"></div>
+              <div class="customer hidden"><img src="assets/customers/kappersberg.png"></div>
+              <div class="customer hidden"><img src="assets/customers/gala.jpg"></div>
+              <div class="customer hidden"><img src="assets/customers/herc.jpeg"></div>
+              <div class="customer hidden"><img src="assets/customers/exatron.jpeg"></div>
+              <div class="customer hidden"><img src="assets/customers/xalingo.png"></div>
+              <div class="customer hidden"><img src="assets/customers/elizabeth.jpeg"></div>
+            </div>
+            <div>
+              <button class="text-lg text-slate-900" id="btn-cc-right">
+                <img class="icon-lg" src="./assets/icons/chevron-right-solid.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <footer class="bg-transparent box-full">
       <div class="box-default flex-row flex-wrap text-slate-50 pb-4 pt-8 justify-between mb:gap-4">
         <div class="flex-column gap-2">

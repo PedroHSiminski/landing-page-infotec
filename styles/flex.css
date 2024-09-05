@@ -39,6 +39,10 @@
 	gap: calc(var(--base-size) * 4);
 	row-gap: calc(var(--base-size) * 4);
 }
+.gap-6 {
+	gap: calc(var(--base-size) * 3);
+	row-gap: calc(var(--base-size) * 3);
+}
 .gap-4 {
 	gap: calc(var(--base-size) * 2);
 	row-gap: calc(var(--base-size) * 2);

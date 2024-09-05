@@ -132,3 +132,12 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+button {
+	appearance: none;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	width: max-content;
+	height: max-content;
+}

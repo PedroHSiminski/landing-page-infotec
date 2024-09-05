@@ -1,5 +1,6 @@
 import animatedCount from './scripts/animations/count.js';
-import { typeWriter } from './scripts/animations/writing.js';
+import { Carrousel } from './scripts/carroussel.js';
+/* import { typeWriter } from './scripts/animations/writing.js'; */
 
 /* insere animaçào de contagem */
 const projetosImplantados = document.getElementById("projetos-implanatados");
@@ -30,9 +31,31 @@ animatedCount({
     element: treinamentosExecutados
 });
 
+new Carrousel({
+    element: document.getElementById('wpc-display'),
+    leftButton: document.getElementById('btn-wpc-left'),
+    rightButton: document.getElementById('btn-wpc-right'),
+    onChange: function(self) {
+        Array.from(self.element.children).forEach((c, i) => {
+            if(i === this.current) {
+                c.classList.add("mb:visible");
+            } else {
+                c.classList.remove("mb:visible");
+            }
+        })
+    }
+});
 
-/* typeWriter({
-    element: document.getElementById("welcome-title"),
-    texts: ["Seja bem vindo(a)", "Infotec Solution Provider"],
-    delay: 200
-}); */
+new Carrousel({
+    element: document.getElementById("coc-display"),
+    leftButton: document.getElementById("btn-coc-left"),
+    rightButton: document.getElementById("btn-coc-right"),
+    length: 1
+})
+
+new Carrousel({
+    element: document.getElementById("cc-display"),
+    leftButton: document.getElementById("btn-cc-left"),
+    rightButton: document.getElementById("btn-cc-right"),
+    length: 5
+})

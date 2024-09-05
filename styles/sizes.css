@@ -112,7 +112,7 @@
     }
     
     .mb\:img-xs {
-        width: calc(var(--base-size) * 15);
+        width: calc(var(--base-size) * 10);
         object-fit: contain;
     }
 
@@ -173,4 +173,8 @@
         width: calc(var(--base-size) * 1);
         object-fit: contain;
     }
+}
+
+.maxw-32 {
+    max-width: calc(var(--base-size) * 32);
 }
