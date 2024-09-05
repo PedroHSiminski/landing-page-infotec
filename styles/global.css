@@ -97,6 +97,7 @@ button:disabled {
 	.mb\:carrousel>:nth-child(3) {
 		display: inherit;
 	}
+
 }
 
 .carrousel {
@@ -104,7 +105,7 @@ button:disabled {
 	grid-template-areas: "left display right";
 	width: 100%;
 	box-sizing: border-box;
-	grid-template-columns: 3rem calc(100% - 6rem) 3rem;
+	grid-template-columns: max-content 1fr max-content;
 	grid-template-rows: 1fr;
 	align-items: center;
 	align-content: center;
@@ -119,7 +120,14 @@ button:disabled {
 	background-color: white;
 	padding: 1rem;
 	border-radius: 1rem;
+}
 
+@media(max-width: 40rem) {
+	.customer {
+		width: 3.5rem;
+		height: 3.5rem;
+		padding: 0.25rem;
+	}
 }
 
 .customer>img {

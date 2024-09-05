@@ -57,5 +57,5 @@ new Carrousel({
     element: document.getElementById("cc-display"),
     leftButton: document.getElementById("btn-cc-left"),
     rightButton: document.getElementById("btn-cc-right"),
-    length: 5
+    length: 4
 })
