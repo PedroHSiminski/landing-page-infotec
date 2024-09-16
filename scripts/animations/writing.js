@@ -20,7 +20,7 @@ export function typeWriter({ element, texts, delay }) {
 
         if (!isDeleting && charIndex === currentText.length) {
             // Pausa antes de começar a deletar
-            typingSpeed = delay * 2;
+            typingSpeed = delay * 8;
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
             // Move para o próximo texto após deletar
@@ -28,7 +28,7 @@ export function typeWriter({ element, texts, delay }) {
             index = (index + 1) % texts.length;  // Loop nos texts
         }
 
-        setTimeout(type, typingSpeed);
+        setTimeout(type, isDeleting ? typingSpeed / 2 : typingSpeed);
     }
 
     type();
